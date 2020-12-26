@@ -11,6 +11,9 @@
   --shadow-color: #808080;
   --brown-bear: #93b486;
   --emperor-penguin: #2c8ad0;
+  --scarlet-macaw: #815931;
+  --sperm-whale: #004593;
+  --plains-zebra: #e4ddde;
 }
 
 *, *::before, *::after {
@@ -55,26 +58,6 @@ header {
   color: var(--title-font-color)
 }
 
-/* .page-title>.title::before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #ff652f;
-  margin-right: 10px;
-}
-
-.page-title>.title::after {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #ff652f;
-  margin-left: 10px;
-} */
-
 .page-title .subtitle {
   margin-top: 5px;
   grid-area: subtitle;
@@ -118,17 +101,21 @@ main {
 
 /* Main */
 .main-content {
+  width: 95%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Main - Cards */
 .card {
   position: relative;
   margin: 1em;
-  height: 300px;
+  height: 200px;
   width: 300px;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .card::before,
@@ -171,6 +158,21 @@ main {
     0 0 20px var(--emperor-penguin);
 }
 
+#scarlet-macaw:hover {
+  box-shadow: 
+    0 0 20px var(--scarlet-macaw);
+}
+
+#sperm-whale:hover {
+  box-shadow: 
+    0 0 20px var(--sperm-whale);
+}
+
+#plains-zebra:hover {
+  box-shadow: 
+    0 0 20px var(--plains-zebra);
+}
+
 .card:hover::before,
 .card:hover::after {
   transform: scale(1, 1);
@@ -178,9 +180,10 @@ main {
 
 .card_img {
   width: 100%;
+  height: 100%;
   display: block;
   transition: opacity ease-out 250ms;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .card:hover .card_img {
