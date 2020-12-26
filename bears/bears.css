@@ -1,3 +1,4 @@
+/* Body */
 body {
   height: 100%;
   display: flex;
@@ -5,6 +6,7 @@ body {
   flex-wrap: nowrap;
 }
 
+/* Aside */
 aside {
   width: 8%;
 }
@@ -39,6 +41,7 @@ aside {
   content: "Home";
 }
 
+/* Main */
 main {
   display: grid;
 }
@@ -54,88 +57,99 @@ main {
 
 .flex-item {
   margin: 1px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image {
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: all 1s ease-in-out;
 }
 
 .image:hover {
+  position: unset;
+  filter: none;
+  transform: scale(1.5);
+  overflow: visible;
+}
+
+#item-1 .image:hover {
+  box-shadow: 0 0 20px #9ebd8e;
+}
+
+#item-2 .image:hover {
+  box-shadow: 0 0 20px #c2b2ac;
+}
+
+#item-3 .image:hover {
+  box-shadow: 0 0 20px #c4ceda;
+}
+
+#item-4 .image:hover {
   box-shadow: 0 0 20px #fff;
 }
 
-#item-1 {
-  
+#item-5 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-2 {
-  
+#item-6 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-3 {
-  
+#item-7 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-4 {
-  
+#item-8 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-5 {
-
+#item-9 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-6 {
-
+#item-10 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-7 {
-
+#item-11 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-8 {
-
+#item-12 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-9 {
-
+#item-13 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-10 {
-
+#item-14 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-11 {
-
+#item-15 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-12 {
-
+#item-16 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-13 {
-
+#item-17 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-14 {
-
+#item-18 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-15 {
-
+#item-19 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
 
-#item-16 {
-
-}
-
-#item-17 {
-
-}
-
-#item-18 {
-
-}
-
-#item-19 {
-
-}
-
-#item-20 {
-
+#item-20 .image:hover {
+  box-shadow: 0 0 20px #fff;
 }
