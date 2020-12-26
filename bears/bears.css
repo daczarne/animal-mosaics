@@ -43,14 +43,99 @@ main {
   display: grid;
 }
 
-.grid-container {
-  border: 2px solid #fff;
+.flex-container {
   height: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.grid-item {
-  width: 100px;
-  height: 100px;
-  border: 2px solid blue;
+.flex-item {
+  margin: 1px;
+}
+
+.image:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+#item-1 {
+  
+}
+
+#item-2 {
+  
+}
+
+#item-3 {
+  
+}
+
+#item-4 {
+  
+}
+
+#item-5 {
+
+}
+
+#item-6 {
+
+}
+
+#item-7 {
+
+}
+
+#item-8 {
+
+}
+
+#item-9 {
+
+}
+
+#item-10 {
+
+}
+
+#item-11 {
+
+}
+
+#item-12 {
+
+}
+
+#item-13 {
+
+}
+
+#item-14 {
+
+}
+
+#item-15 {
+
+}
+
+#item-16 {
+
+}
+
+#item-17 {
+
+}
+
+#item-18 {
+
+}
+
+#item-19 {
+
+}
+
+#item-20 {
+
 }
