@@ -14,6 +14,7 @@
   --scarlet-macaw: #815931;
   --sperm-whale: #004593;
   --plains-zebra: #e4ddde;
+  --siberian-tiger: #876540;
 }
 
 *, *::before, *::after {
@@ -171,6 +172,11 @@ main {
 #plains-zebra:hover {
   box-shadow: 
     0 0 20px var(--plains-zebra);
+}
+
+#siberian-tiger:hover {
+  box-shadow: 
+    0 0 20px var(--siberian-tiger);
 }
 
 .card:hover::before,
