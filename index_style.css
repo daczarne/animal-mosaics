@@ -5,16 +5,15 @@
   --background: #272727;
   --secondary-bg-color: #17141d;
   --font-color: #fff;
-  --title-font-color: #ff652f;
-  --subtitle-font-color: #ec7014;
+  --title-font-color: #fff;
   --green: #12a76e;
   --shadow-color: #808080;
-  --brown-bear: #93b486;
-  --emperor-penguin: #2c8ad0;
-  --scarlet-macaw: #815931;
-  --sperm-whale: #004593;
-  --plains-zebra: #e4ddde;
-  --siberian-tiger: #876540;
+  --bears: #98c84c;
+  --penguins: #2c8ad0;
+  --macaws: #815931;
+  --whales: #004593;
+  --zebras: #e4ddde;
+  --tigers: #876540;
 }
 
 *, *::before, *::after {
@@ -43,29 +42,18 @@ header {
 }
 
 .page-title {
-  padding: 15px;
-  display: grid;
-  grid-template-areas: 
-    "title"
-    "subtitle";
-  grid-template-rows: 80% 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-title .title {
-  grid-area: title;
   font-size: 2.5rem;
-  justify-self: center;
-  align-self: center;
-  color: var(--title-font-color)
+  color: var(--title-font-color);
+  padding-top: 30px;
 }
 
-.page-title .subtitle {
-  margin-top: 5px;
-  grid-area: subtitle;
-  justify-self: center;
-  align-self: center;
-  color: var(--subtitle-font-color);
-}
 
 /* Main - Site description */
 main {
@@ -149,34 +137,34 @@ main {
   transition: 0.3s ease-in-out;
 }
 
-#brown-bear:hover {
+#bears:hover {
   box-shadow: 
-    0 0 20px var(--brown-bear);
+    0 0 20px var(--bears);
 }
 
-#emperor-penguin:hover {
+#penguins:hover {
   box-shadow: 
-    0 0 20px var(--emperor-penguin);
+    0 0 20px var(--penguins);
 }
 
-#scarlet-macaw:hover {
+#macaws:hover {
   box-shadow: 
-    0 0 20px var(--scarlet-macaw);
+    0 0 20px var(--macaws);
 }
 
-#sperm-whale:hover {
+#whales:hover {
   box-shadow: 
-    0 0 20px var(--sperm-whale);
+    0 0 20px var(--whales);
 }
 
-#plains-zebra:hover {
+#zebras:hover {
   box-shadow: 
-    0 0 20px var(--plains-zebra);
+    0 0 20px var(--zebras);
 }
 
-#siberian-tiger:hover {
+#tigers:hover {
   box-shadow: 
-    0 0 20px var(--siberian-tiger);
+    0 0 20px var(--tigers);
 }
 
 .card:hover::before,
