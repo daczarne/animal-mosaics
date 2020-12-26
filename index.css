@@ -1,7 +1,5 @@
 body {
-  background: var(--background);
   height: 100vh;
-  color: var(--font-color);
   display: flex;
   flex-direction: row;
   align-items: center;
