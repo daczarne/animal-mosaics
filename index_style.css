@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 :root {
-  --background: #f3f2ef;
-  --font-color: #272727;
+  --background: #272727;
+  --secondary-bg-color: #17141d;
+  --font-color: #fff;
   --title-font-color: #ff652f;
   --subtitle-font-color: #ec7014;
-  --shadow-color: #808080; 
+  --green: #12a76e;
+  --shadow-color: #808080;
+  --brown-bear: #93b486;
+  --emperor-penguin: #2c8ad0;
 }
 
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Mono', 'Roboto', monospace;
   font-size: 1.5rem;
 }
 
@@ -111,12 +116,18 @@ main {
   background: var(--title-font-color);
 }
 
+/* Main */
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Main - Cards */
 .card {
   position: relative;
   margin: 1em;
-  max-height: 300px;
-  max-width: 300px;
+  height: 300px;
+  width: 300px;
   cursor: pointer;
 }
 
@@ -148,7 +159,16 @@ main {
 
 .card:hover {
   transition: 0.3s ease-in-out;
-  box-shadow: 10px 10px var(--shadow-color);
+}
+
+#brown-bear:hover {
+  box-shadow: 
+    0 0 20px var(--brown-bear);
+}
+
+#emperor-penguin:hover {
+  box-shadow: 
+    0 0 20px var(--emperor-penguin);
 }
 
 .card:hover::before,
