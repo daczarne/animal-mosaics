@@ -1,155 +1,65 @@
 /* Body */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-/* Aside */
-aside {
-  width: 8%;
-}
-
-.home {
-  width: 90%;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.blank-space {
-  height: 50px;
+  margin: 0;
+  font-family: monospace;
+  background: #272727;
 }
 
 .home-btn {
-  background-color: #12a76e;
-  min-width: 100px;
-  max-width: 120px;
-  text-decoration: none;
+  position: fixed;
+  background: #12a76e;
   color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  left: 0;
+  top: 100px;
+  width: auto;
+  z-index: 1;
+  padding: 0 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding: 0 12px;
-  z-index: 1;
-  overflow-x: visible;
 }
 
 .home-btn::before {
   content: "Home";
 }
 
-/* Main */
-main {
-  display: grid;
-}
-
-.flex-container {
-  height: 100%;
+.row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
-.flex-item {
-  margin: 1px;
-  border-radius: 10px;
-  position: relative;
+.column {
+  flex: 25%;
 }
 
-.image {
-  border-radius: 10px;
+.column img {
+  padding: 4px;
+  width: 100%;
+  vertical-align: middle;
   filter: grayscale(100%);
-  transition: all 1s ease-in-out;
+  border-radius: 15px;
 }
 
-.image:hover {
-  position: unset;
+.column img:hover {
   filter: none;
-  transform: scale(1.5);
-  overflow: visible;
-}
-
-#item-1 .image:hover {
-  box-shadow: 0 0 20px #9ebd8e;
-}
-
-#item-2 .image:hover {
-  box-shadow: 0 0 20px #c2b2ac;
-}
-
-#item-3 .image:hover {
-  box-shadow: 0 0 20px #c4ceda;
-}
-
-#item-4 .image:hover {
+  /* transform: scale(1.5); */
+  transition: all 1s ease-in-out;
   box-shadow: 0 0 20px #fff;
 }
 
-#item-5 .image:hover {
-  box-shadow: 0 0 20px #fff;
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
 }
 
-#item-6 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-7 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-8 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-9 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-10 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-11 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-12 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-13 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-14 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-15 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-16 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-17 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-18 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-19 .image:hover {
-  box-shadow: 0 0 20px #fff;
-}
-
-#item-20 .image:hover {
-  box-shadow: 0 0 20px #fff;
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
 }
