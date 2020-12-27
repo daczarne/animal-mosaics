@@ -43,12 +43,12 @@ body {
   vertical-align: middle;
   filter: grayscale(100%);
   border-radius: 15px;
+  transition: all 1s ease-in-out;
 }
 
 .column img:hover {
   filter: none;
-  /* transform: scale(1.5); */
-  transition: all 1s ease-in-out;
+  /* transform: scale(1.2); */
   box-shadow: 0 0 20px #fff;
 }
 
